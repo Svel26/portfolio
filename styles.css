@@ -185,8 +185,9 @@ nav a:hover {
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.7rem;
   margin-top: 1.5rem;
+  position: relative;
 }
 .skill-tag {
   background: var(--accent);
@@ -196,9 +197,35 @@ nav a:hover {
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
+  margin-left: -0.22rem;
+  margin-right: -0.22rem;
   letter-spacing: 0.5px;
   transition: background 0.25s, color 0.25s, transform 0.25s;
   cursor: pointer;
+  will-change: transform;
+  display: inline-block;
+  height: 2.4em; /* Reserve space for scaling (1rem font-size + padding + scale) */
+  line-height: 1.6;
+  box-sizing: border-box;
+  transform-origin: center;
+  position: relative; /* Ensure relative positioning for pseudo-element */
+  min-width: 11.5em;
+  width: 11.5em;
+  text-align: center;
+  white-space: nowrap;
+}
+.skill-tag::before {
+  content: attr(data-label);
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  display: inline-block;
+  transform: scale(1.08);
+  height: 0;
 }
 .skill-tag:hover {
   background: var(--secondary);
