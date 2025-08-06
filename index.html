@@ -1,133 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio website for [Your Name] - Web Developer, Projects, Skills, and Contact.">
-    <title>Sven Jesse Jansen | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Favicon placeholder -->
-    <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focused Spark | Sven Jesse Jansen</title>
+  <!-- Google Fonts: Lexend, Inter, Fira Code -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600&family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header with logo, name, and navigation -->
-    <header>
-        <div class="container header-container">
-            <div class="brand">
-                <div class="logo">
-                    <!-- Placeholder logo -->
-                    <img src="logo.png" alt="Logo" height="40">
-                </div>
-                <h1 class="site-title">Sven Jesse Jansen</h1>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+  <div class="container" style="text-align: center;">
+    <h1>Sven Jesse Jansen</h1>
+    <p class="tagline">
+      Software Developer blending <span>creativity</span> and logic.
+    </p>
+  </div>
+  <section class="about-section" style="text-align: center; max-width: 800px; margin: 0 auto; padding: 0 1rem;">
+    <h2 style="color: var(--accent-magenta);">About</h2>
+    <p>
+      A curious and motivated MBO Software Development student with a strong interest in the combination of software, AI, and industrial systems. I have practical experience with Python, data processing, and embedded PLCs from my internship, and enjoy experimenting with Large Language Models (LLMs) in my spare time. I am a social team player who enjoys learning new technologies and developing creative, technical solutions.
+    </p>
+  </section>
+  <section class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <span class="skill-tag accent-magenta">python</span>
+      <span class="skill-tag accent-cyan">AI/ML</span>
+      <span class="skill-tag accent-amber">LLM integration</span>
+      <span class="skill-tag accent-magenta">scrum</span>
+      <span class="skill-tag accent-cyan">creative thinking</span>
+      <span class="skill-tag accent-amber">problem solving</span>
+    </div>
+  </section>
+  <section class="projects-section">
+    <h2 style="text-align: center;">Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card accent-magenta">
+        <img src="Placeholder.svg" alt="" aria-hidden="true" class="project-image">
+        <div class="card-content">
+          <h3>Coming Soon</h3>
+          <p>Projects will be added to the website soon.</p>
         </div>
-    </header>
-
-    <!-- About Me Section -->
-    <section id="about" class="about-section fade-in">
-        <div class="container about-container">
-            <img src="profilepic.JPG" alt="Profile Photo" class="profile-photo">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>A curious and motivated MBO Software Development student with a strong interest in the combination of software, AI, and industrial systems. I have practical experience with Python, data processing, and embedded PLCs from my internship, and enjoy experimenting with Large Language Models (LLMs) in my spare time. I am a social team player who enjoys learning new technologies and developing creative, technical solutions.</p>
-            </div>
+      </article>
+      <article class="project-card accent-cyan">
+        <img src="Placeholder.svg" alt="" aria-hidden="true" class="project-image">
+        <div class="card-content">
+          <h3>Coming Soon</h3>
+          <p>Projects will be added to the website soon.</p>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section fade-in">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <!-- Example skill tags/icons -->
-                <span class="skill-tag" data-label="Python">Python</span>
-                <span class="skill-tag" data-label="Data Processing">Data Processing</span>
-                <span class="skill-tag" data-label="LLMs">LLMs</span>
-                <span class="skill-tag" data-label="AI/ML">AI/ML</span>
-                <span class="skill-tag" data-label="Git">Git</span>
-                <span class="skill-tag" data-label="Scrum">Scrum</span>
-                <span class="skill-tag" data-label="Problem Solving">Problem Solving</span>
-                <span class="skill-tag" data-label="Creative Thinking">Creative Thinking</span>
-            </div>
+      </article>
+      <article class="project-card accent-amber">
+        <img src="Placeholder.svg" alt="" aria-hidden="true" class="project-image">
+        <div class="card-content">
+          <h3>Coming Soon</h3>
+          <p>Projects will be added to the website soon.</p>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section fade-in">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <h3>Lorem Ipsum Project 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae velit ex. Mauris dapibus risus quis suscipit vulputate.</p>
-                    <a href="#" class="btn" target="_blank">Live Demo</a>
-                    <a href="#" class="btn btn-secondary" target="_blank">GitHub</a>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <h3>Lorem Ipsum Project 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae velit ex. Mauris dapibus risus quis suscipit vulputate.</p>
-                    <a href="#" class="btn" target="_blank">Live Demo</a>
-                    <a href="#" class="btn btn-secondary" target="_blank">GitHub</a>
-                </div>
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <h3>Lorem Ipsum Project 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae velit ex. Mauris dapibus risus quis suscipit vulputate.</p>
-                    <a href="#" class="btn" target="_blank">Live Demo</a>
-                    <a href="#" class="btn btn-secondary" target="_blank">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section fade-in">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-showcase">
-                <a href="mailto:sjjansen06@gmail.com" class="email-showcase-btn">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:0.5em;"><path d="M12 13.065l-8-5.065v10h16v-10zm8-7.065v2.13l-8 5.065-8-5.065v-2.13c0-1.104.896-2 2-2h12c1.104 0 2 .896 2 2z"/></svg>
-                    sjjansen06@gmail.com
-                </a>
-            </div>
-            <div class="contact-links">
-                <a href="mailto:sjjansen06@gmail.com">Email: sjjansen06@gmail.com</a>
-                <a href="https://www.linkedin.com/in/svenjessejansen" target="_blank" aria-label="LinkedIn">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
-                </a>
-                <a href="https://github.com/svenjessejansen" target="_blank" aria-label="GitHub">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576 4.765-1.587 8.199-6.084 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-container">
-            <span>&copy; 2025 Sven Jesse Jansen. All rights reserved.</span>
-            <div class="footer-social">
-                <a href="mailto:sjjansen06@gmail.com" target="_blank">Email</a>
-                <a href="https://www.linkedin.com/in/svenjessejansen" target="_blank" aria-label="LinkedIn">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
-                </a>
-                <a href="https://github.com/svenjessejansen" target="_blank" aria-label="GitHub">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576 4.765-1.587 8.199-6.084 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+      </article>
+    </div>
+  </section>
+  <section class="contact-section" style="text-align: center; margin-top: 3em;">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:sven@sparkmail.com" class="contact-email">sjjansen06@gmail.com</a>
+    </p>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <span>&copy; 2025 All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/svenjessejansen" class="footer-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.94 19.5V9.56H3.5V19.5h3.44ZM5.22 8.18a1.72 1.72 0 1 0 0-3.44 1.72 1.72 0 0 0 0 3.44ZM20.5 19.5v-5.34c0-2.86-1.53-4.19-3.57-4.19-1.65 0-2.39.91-2.8 1.55v-1.33H10.7V19.5h3.43v-5.01c0-1.32.25-2.6 1.89-2.6 1.62 0 1.64 1.52 1.64 2.69V19.5h3.44Z" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="https://github.com/svenjessejansen" class="footer-link" aria-label="GitHub" target="_blank" rel="noopener">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.18 9.18 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .26.18.57.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
